@@ -58,15 +58,14 @@ This repository provides open access to the *LEMON* dataset, *LemonFM* foundatio
 If you use our dataset, model, or code in your research, please cite our paper:
 
 ```
-@misc{che2025lemonlargeendoscopicmonocular,
-      title={LEMON: A Large Endoscopic MONocular Dataset and Foundation Model for Perception in Surgical Settings}, 
-      author={Chengan Che and Chao Wang and Tom Vercauteren and Sophia Tsoka and Luis C. Garcia-Peraza-Herrera},
-      year={2025},
-      eprint={2503.19740},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2503.19740}, 
+@InProceedings{Che_2026_CVPR,
+    author    = {Che, Chengan and Wang, Chao and Vercauteren, Tom and Tsoka, Sophia and Garcia-Peraza-Herrera, Luis C.},
+    title     = {LEMON: A Large Endoscopic MONocular Dataset and Foundation Model for Perception in Surgical Settings},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year      = {2026}
 }
+
+
 ```
 
 Abstract
