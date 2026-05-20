@@ -1,5 +1,4 @@
 
-
 <p align="center">
     <a href="https://visurg.ai/">
     <img src="https://github.com/user-attachments/assets/ffcc29f7-37bc-4dc7-9650-b7af571df157">
@@ -73,9 +72,8 @@ Traditional open-access datasets focusing on surgical procedures are often limit
 
 <br>
 
-Diversity and procedure prevalence in LEMON:
+<img  alt="poster_cvpr26_lemon" src="https://github.com/user-attachments/assets/df5d7019-c75d-4eb4-a3c2-47fd55cd8a5d" />
 
-<img src="https://github.com/user-attachments/assets/67322046-5515-47e1-bb3f-621892c8608c">
 
 
 🔧 Install dependencies to recreate our LEMON dataset
