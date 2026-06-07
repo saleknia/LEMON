@@ -29,8 +29,8 @@ Star ⭐ us if you like it!
 
 <!-- XX/March/2025. The [HuggingFace models and demo](TODO) are released. -->
 <!--<br>-->
-* **[Feb 2026]** 🎉 [LEMON](https://arxiv.org/abs/2503.19740) has been accepted to the **CVPR 2026** main conference!
-* **[Feb 2026]** 🚨 Our latest work, [**PL-Stitch**](https://github.com/visurg-ai/PL-Stitch), has also been accepted to the **CVPR 2026** main conference! It introduces a novel self-supervised pretraining method for procedural video understanding, delivering a more powerful and efficient foundation model for perception in surgical settings.
+* **[Feb 2026]** 🎉 [LEMON](https://openaccess.thecvf.com/content/CVPR2026/html/Che_LEMON_A_Large_Endoscopic_MONocular_Dataset_and_Foundation_Model_for_CVPR_2026_paper.html) has been accepted to the **CVPR 2026** main conference!
+* **[Feb 2026]** 🚨 Our latest work, [**PL-Stitch**](https://openaccess.thecvf.com/content/CVPR2026/html/Che_A_Stitch_in_Time_Learning_Procedural_Workflow_via_Self-Supervised_Plackett-Luce_CVPR_2026_paper.html), has also been accepted to the **CVPR 2026** main conference! It introduces a novel self-supervised pretraining method for procedural video understanding, delivering a more powerful and efficient foundation model for perception in surgical settings.
 * **[Aug 2025]** Our project is now known as **LEMON**, formerly Surg-3M.
 * **[Mar 2025]** The [arXiv](https://arxiv.org/abs/2503.19740) version of the paper is released.
 
