@@ -1,3 +1,4 @@
+from torch.utils.tensorboard import SummaryWriter
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -7,6 +8,7 @@ import torch.nn as nn
 import torchvision
 import tqdm
 from sklearn.metrics import accuracy_score, recall_score, f1_score, average_precision_score
+from torch.utils.tensorboard import SummaryWriter
 
 class EarlyStopping:
     def __init__(self, patience=10, min_delta=0):
@@ -38,8 +40,8 @@ def build_model(nclasses: int = 10, pretrained_weights: str = None):
     net.cuda()
     return net
 
-def setup_tensorboard(log_dir) -> torch.utils.tensorboard.SummaryWriter:
-    return torch.utils.tensorboard.SummaryWriter(log_dir=log_dir)
+def setup_tensorboard(log_dir):
+    return SummaryWriter(log_dir=log_dir)
 
 def calculate_metrics(probabilities, targets):
     predictions = (probabilities > 0.5).float()
