@@ -8,6 +8,8 @@ import random
 import numpy as np
 import torch
 import tqdm
+import warnings
+warnings.filterwarnings('ignore', category=FutureWarning)
 
 from .load_action import (
     EarlyStopping, calculate_metrics, valid, 
@@ -58,8 +60,9 @@ def train(net, train_dl, loss_func, optimizer, scheduler, scaler, device='cuda')
     # Unpack the specific CholecT50 tuple structure to extract 'verbs' (index 2)
     for batch_idx, (inputs, (_, _, targets, _, _)) in pbar:
         inputs, targets = inputs.to(device), targets.to(device)
-        
-        with torch.cuda.amp.autocast(enabled=True):
+
+        with torch.amp.autocast('cuda', enabled=True):
+        # with torch.cuda.amp.autocast(enabled=True):
             outputs = net(inputs)
             loss = loss_func(outputs, targets)
     
@@ -110,7 +113,8 @@ def main():
         loss_func = torch.nn.BCEWithLogitsLoss()
         optimizer = build_optimizer(net, args.lr, args.opt)
         scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, args.nepochs)
-        scaler = torch.cuda.amp.GradScaler(enabled=True)
+        scaler = torch.amp.GradScaler('cuda', enabled=True)
+        # scaler = torch.cuda.amp.GradScaler(enabled=True)
         writer = setup_tensorboard(args.logdir)
         
         lowest_valid_loss = np.inf
