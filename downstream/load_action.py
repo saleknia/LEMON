@@ -9,7 +9,8 @@ import torchvision
 import tqdm
 from sklearn.metrics import accuracy_score, recall_score, f1_score, average_precision_score
 from torch.utils.tensorboard import SummaryWriter
-
+import warnings
+warnings.filterwarnings('ignore', category=UserWarning)
 class EarlyStopping:
     def __init__(self, patience=10, min_delta=0):
         self.patience = patience
